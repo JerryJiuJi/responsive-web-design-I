@@ -119,9 +119,7 @@ body {
 
   #logo {
 	display: flex;
-	font-size: 14px;
 	/* border: 5px solid black; */
-	/* height: 100px; */
 	padding: 20px;
 	width: 25%;
 	margin-right: 40px;
@@ -309,27 +307,40 @@ ol br {
 @media (max-width: 500px) {
     .container {
         width: 100%;
-    }
+	}
+	/* header .navigation .menubar {
+		border: solid rebeccapurple;
+		margin: 1px;
+	} */
+
 
     header nav {
 		border: solid red;
-        width: 80%;
-		flex-direction: column;
+        width: 85%;
+		flex-direction: column-reverse;
 		justify-content: center;
+		/* flex-wrap: wrap; */
+		box-sizing: border-box;
+
     }
 
     header .menubar a{
 		border: solid blue;
-        width: 80%;
-        display: flex;
+        width: 100%;
         justify-content: center;
-        padding: 20px;
+        padding: 3%;;
         border-bottom: 1px solid black;
 	}
 
 	#logo {
+		/* display: flex; */
 		border: solid yellow;
-		position: top;
+		margin: 3%;
+		top: 2%;
+		width: 60%;
+		height: 40%;
+		
+		
 	}
 	
 	.hide-me {
@@ -366,6 +377,7 @@ ol br {
 	.footer .contact {
 		border: solid orange;
 		display: flex;
+		margin: .5% auto;
 		width: 80%;
 	}
 }
