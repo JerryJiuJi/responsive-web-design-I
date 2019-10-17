@@ -72,13 +72,15 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.container{
-	/* border: 5px solid black; */
+body {
 	display: flex;
-	padding: 5px;
-	/* justify-content: center;
-	align-items: center; */
+	justify-content: center;
+	width: 880px;
 }
+
+
+
+
 
 .menubar {
 	/* border: 5px solid black; */
@@ -98,13 +100,13 @@ h1, h2, h3, h4, h5 {
 	}
 
 
-		.menubar nav a {
+	.menubar nav a {
 			/* border: 1px solid; */
 			color: grey;
 			font-size: 20px;
 			text-decoration: none;
 			justify-content: space-between;
-			margin: 40px;
+			margin: 4%;
 
 	
   }
@@ -116,12 +118,14 @@ h1, h2, h3, h4, h5 {
   
 
   #logo {
+	display: flex;
 	font-size: 14px;
 	/* border: 5px solid black; */
 	/* height: 100px; */
 	padding: 20px;
 	width: 25%;
 	margin-right: 40px;
+	position: relative;
 
 
 	
@@ -260,32 +264,109 @@ ol br {
 	margin: 20px;
 }
 
-@media (max-width: 480px) {
-    body div {
-      background-color: blue;
-      width: 90%;
-    }
-  
-    nav {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    nav a {
-      font-size: 24px;
-    }
-  }
+/* responsive media code below*/
 
-@media screen and (max-width: 760px) {
-    body {
-        background-color: blueviolet;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .skill-container div {
-      width: 80%;
-    }
-  }
+.parent-container {
+	/* width: 880px; */
+}
 
 
+@media (max-width: 500px) {
+    .container {
+		width: 100%;
+		background-color: green;
+    }
+
+    header .menubar {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header nav a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    /* header nav a:first-child {
+        border-top: 1px solid black;
+    } */
+
+    .top-content, .bottom-content {
+        flex-direction: column;
+    }
+
+    .top-content section, .bottom-content section, .contact {
+        width: 90%;
+        margin: 25px;
+    }
+}
+
+
+/* mobile phone media query START */
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    header nav {
+		border: solid red;
+        width: 80%;
+		flex-direction: column;
+		justify-content: center;
+    }
+
+    header .menubar a{
+		border: solid blue;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        border-bottom: 1px solid black;
+	}
+
+	#logo {
+		border: solid yellow;
+		position: top;
+	}
+	
+	.hide-me {
+		border: solid yellow;
+		display: none;
+	}
+
+
+    .top-content, .bottom-content {
+		flex-direction: column;
+	
+	}
+
+	.content_1 {
+		justify-content: center;
+	}
+
+
+	.content_1_box_text {
+		display: flex;
+		border: solid green;
+
+	}
+
+
+    .top-content section, .bottom-content section, .contact {
+		border: solid purple;
+        width: 90%;
+		margin: 1% auto;
+		font-size: 24px;
+
+	}
+	
+	.footer .contact {
+		border: solid orange;
+		display: flex;
+		width: 80%;
+	}
+}
+/* mobile phone media query END */
