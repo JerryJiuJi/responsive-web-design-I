@@ -1,3 +1,291 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    border: solid;
+    line-height: 1;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container{
+	/* border: 5px solid black; */
+	display: flex;
+	padding: 5px;
+	/* justify-content: center;
+	align-items: center; */
+}
+
+.menubar {
+	/* border: 5px solid black; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3%;
+}
+
+	.menubar .navigation {
+		/* border: 5px solid yellow; */
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+
+	}
+
+
+		.menubar nav a {
+			/* border: 1px solid; */
+			color: grey;
+			font-size: 20px;
+			text-decoration: none;
+			justify-content: space-between;
+			margin: 40px;
+
+	
+  }
+
+  #title {
+	font-family: 'Bangers', cursive;
+
+}
+  
+
+  #logo {
+	font-size: 14px;
+	/* border: 5px solid black; */
+	/* height: 100px; */
+	padding: 20px;
+	width: 25%;
+	margin-right: 40px;
+
+
+	
+  }
+
+.content_1 {
+	display: flex;
+	/* border: 5px solid; */
+	padding: 5px;
+	margin: 20px;
+	
+	
+}
+
+.content_1_box_text {
+	display: flex;
+	/* border: 3px solid yellow; */
+	/* vertical-align: top; */
+	width: 65%;
+	font-family: 'Titillium Web', sans-serif;
+	color: black;
+	font-size: 85px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 20px;
+
+}
+
+	#code-circle {
+		/* border: 2px solid; */
+		margin: 20px;
+	}
+
+ul :last-child {
+  background-color: white;
+  border: solid black;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  width: 90px;
+  margin-left: 110px;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.top-content {
+	/* border: solid; */
+	/* border-top: solid; */
+	display: flex;
+	justify-content: space-evenly;
+	margin: 20px;
+	/* padding: 20px; */
+	border-top: solid;
+	padding: 20px 0;
+	border-width: 1px;
+
+}
+
+	.about {
+		/* border: solid; */
+		width: 40%;
+
+	}
+
+	.features {
+		/* border: solid; */
+		width: 40%;
+
+	}
+
+	.middle-img {
+		display: flex;
+		align-items: center;
+		/* border: solid orange; */
+		padding: 1%;
+		justify-content: center;
+
+
+	}
+		.middle-img #code-block {
+			/* margin: 10%; */
+			display: flex;
+			/* border: solid blue; */
+			width: 95%;
+			height: 100;
+			
+		}
+
+.bottom-content {
+	/* border: solid blue; */
+	display: flex;
+	justify-content: space-evenly;
+	/* margin: 2%; */
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin: 2%;
+	border-bottom: 1px solid black;
+
+	/* margin: 1%; */
+}
+	.bottom-content section {
+		/* border: solid red; */
+		width: 27%;
+		margin: 20px;
+
+
+	}
+
+.footer {
+	/* border: solid red; */
+	margin-top: 5px;
+	margin-bottom: 30px;
+
+}
+	.footer .contact {
+		
+		width: 100%;
+		flex-direction: column;
+		/* border: solid purple; */
+		justify-content: center;
+		align-items: left;
+		margin: 4%;
+
+	}
+
+ol br {
+	font-size: 1x;
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+	color: black;
+	align-items: center;
+	margin: 20px;
+}
+
+@media (max-width: 480px) {
+    body div {
+      background-color: blue;
+      width: 90%;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav a {
+      font-size: 24px;
+    }
+  }
+
+@media screen and (max-width: 760px) {
+    body {
+        background-color: blueviolet;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skill-container div {
+      width: 80%;
+    }
+  }
+
+
